@@ -1,0 +1,442 @@
+
+/* Formatação da Estrutura */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+}
+
+header {
+  height: 150px;
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+aside {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+aside ul li {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+aside h1 {
+  font-size: xx-large;
+  margin-bottom: 10px;
+  color: aliceblue;
+  margin-top: 70px;
+}
+
+footer {
+  color: white;
+  clear: both;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Menu Principal */
+
+.menuprincipal {
+  float: right;
+}
+
+.menuprincipal ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.menuprincipal ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgb(148, 148, 154);
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: larger;
+  display: flex;
+}
+
+.menuprincipal ul li a:hover {
+  background-color: rgb(110, 107, 107);
+  color: white;
+}
+
+/*Carrosel - HomePage*/
+.custom-caption {
+  text-align: left;
+  margin-left: 35%;
+  margin-bottom: 3%;
+  position: absolute;
+}
+.custom-caption2 {
+  text-align: left;
+  margin-right: 45%;
+  margin-bottom: 3%;
+  position: absolute;
+}
+.custom-caption3 {
+  text-align: left;
+  margin-left: 55%;
+  margin-bottom: 3%;
+  position: absolute;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important; 
+  border: none; 
+}
+.click-area {
+  cursor: pointer;
+}
+
+/* Filmes */
+
+.subtitulo {
+  display: block;
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  border-bottom: 5px solid#4e4e4e;
+}
+
+h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+.genero {
+  margin-bottom: 20px;
+}
+
+.movie-card img {
+  height: 250px; 
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.movie-card h3{
+  margin-bottom: 10px;
+}
+
+.filme {
+  margin-bottom: 30px;
+  clear: both;
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  vertical-align: top;
+  text-align: justify;
+}
+
+/*  Categoria de Generos */
+
+.Categoria ul li {
+  list-style-type: none;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+}
+
+.Categoria ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.Categoria ul li a:hover {
+  color: rgba(255, 242, 242, 0.489);
+}
+
+/* Caixa de Pesquisa*/
+.caixa-pesquisa {
+  padding: 20px;
+  display: block;
+}
+.caixa_pesquisa input {
+  width: 27%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  margin-left: 62%;
+  margin-bottom: 5%;
+}
+.caixa_pesquisa button {
+  padding: 10px 15px;
+  border: none;
+  background: rgba(255, 242, 242, 0.489);
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*Informações da Aluna*/
+
+.titulo-info{
+  display: block;
+  width: 100%;
+  font-size: xx-large;
+  border-bottom: 5px solid#4e4e4e;
+  margin: 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.sobre {
+  width: 60%;
+}
+
+.sobre p{
+  margin-top: 20px;
+  text-align: justify;}
+
+.sobre h3 {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.linha {
+  height: 10px;
+  background-color: #ccc;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+.autoria {
+  width: 30%;
+}
+
+.autoria h3{
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+
+.perfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.perfil img{
+  width: 35%;
+  border-radius: 80%;
+  margin-right: 5%;
+}
+
+.autoria-info p {
+  text-align: justify;
+  margin: 4px 0;
+}
+
+.autoria-info b {
+  display: inline-block;
+  width: 55px;
+}
+
+/* Dispositivos até 600px */
+
+@media screen and (max-width: 600px) {
+  .header img {
+    width: 45%;
+  }
+  .header{
+    display: flex;
+  }
+  .menuprincipal{
+    margin-top: 35px;
+    margin-right: 15px;
+  }
+  .menuprincipal ul li a {
+    padding: 8px;
+    font-size: 13px;
+  }
+  .banner {
+    display: none;
+  }
+   
+  .filme {
+    display: block;
+    width: 100%;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .Categoria ul li{
+    margin: 0px;
+  }
+  .Categoria h1{
+    font-size: x-large;
+  }
+  .Categoria ul li a {
+    text-decoration: underline;
+    font-size: large;
+  }
+
+  .caixa_pesquisa input {
+    width: 50%;
+    margin: 5%;
+
+  }
+  .tab{
+    display: none;
+  }
+  .cell{
+    display: none;
+  }
+
+}
+
+
+/* Dispositivos de 601px até 1024px*/
+
+@media screen and (min-width:601px) and (max-width:1024px){
+  .header img {
+    width: 80%;
+  }
+  .header{
+    display: flex;
+  }
+  .menuprincipal{
+    margin-top: 0px;
+    margin-right: 50px;
+    padding: 15px;
+  }
+  .menuprincipal ul li{
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .menuprincipal ul li a {
+    padding: 10px;
+    margin: 10px;
+    font-size: 13px;
+  }
+  
+  .caixa_pesquisa input {
+    width: 70%;
+    margin: 5%;
+    margin-top: 10%;
+  }
+  .tab{
+    display: none;
+  }
+  .filme{
+    width: 45%;
+}
+}
+
+
+/*Layout para pagina JavaScript*/
+
+/* Detalhes do Filme Escolhido */
+.titulo {
+  margin-top: 5%;
+  margin-right: 20%;
+  color:white;
+}
+
+.descricao{
+  color: white;
+  margin-top: 50px;
+  margin-right: 20%;
+  margin-left: auto;
+}
+
+.imagem{
+  width: 20%;
+  display: block;
+  float: left;
+  margin: 5% 20px 5% 20%;
+
+}
+.video{
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+.link {
+  background-color: red;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 5%;
+  text-decoration: none;
+}
+.link:hover {
+  background-color: darkred;
+}
+
+/* Elenco */
+
+.carrossel-container {
+  margin: 30px 0;
+  padding: 0 20px;
+  color: white;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.carrossel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrossel::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 4px;
+}
+
+.carrossel img {
+  border-radius: 10px;
+  height: 150px;
+  width: 100px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.carrossel img:hover {
+  transform: scale(1.05);
+}
+
+.carrossel-nome {
+  text-align: center;
+  font-size: 90%;
+  margin-top: 4px;
+  max-width: 100px;
+}

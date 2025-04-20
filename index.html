@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FILMTRIP'S ENTERTAINMENT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-black">
+    <!--Cabeçalho-->
+
+    <header class="header">
+      <img src="img/FilmsTrips.png" alt="Logo" width="25%" />
+      <nav class="menuprincipal">
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner e Caixa de Pesquisa-->
+
+    <main>
+      <div class="caixa_pesquisa">
+        <input class="barra" type="text" placeholder="Buscar filmes..." />
+        <button>Pesquisar</button>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video src="img/Banner.mp4.mp4" class="d-block w-100" autoplay loop muted playsinline></video>
+              <div class="carousel-caption d-none d-md-block ">
+                <h5>FILMTRIP'S ENTERTAINMENT</h5>
+                <p>Seu Catálogo De Filmes</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="click-area" data-id="1">
+              <img src="img/BannerVingadoresUltimato.png" class="d-block w-100" alt="Banner1">
+              <div class="carousel-caption d-none d-md-block custom-caption3">
+                <h5>FILMTRIP'S ENTERTAINMENT</h5>
+                <p>Assista agora – clique aqui</p>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="click-area" data-id="20">
+              <img src="img/BannerUmLugarSilencioso.jpg" class="d-block w-100" alt="Banner2">
+              <div class="carousel-caption d-none d-md-block custom-caption">
+                <h5>FILMTRIP'S ENTERTAINMENT</h5>
+                <p>Assista agora – clique aqui</p>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="click-area" data-id="12">
+              <img src="img/BannerAindaEstouAqui.jpg" class="d-block w-100" alt="Banner3" >
+              <div class="carousel-caption d-none d-md-block custom-caption2">
+                <h5>FILMTRIP'S ENTERTAINMENT</h5>
+                <p>Seu Catálogo De Filmes</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </main>
+
+    <!-- Generos dos Filmes -->
+    <aside>
+      <nav class="Categoria">
+        <h1>GÊNEROS</h1>
+
+        <ul>
+          <li><a href="Ação.html">Ação</a></li>
+          <li><a href="Comédia.html">Comédia</a></li>
+          <li><a href="Drama.html">Drama</a></li>
+          <li><a href="Ficção.html">Ficção Científica</a></li>
+          <li><a href="Terror.html">Terror</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Conteudo do Site -->
+    <section class="conteiner">
+      <!-- Categoria: Ação -->
+
+      <h2 class="subtitulo">AÇÃO</h2>
+      <article class="genero row">
+        <div class="filme col-md-3 movie-card">
+          <img
+            src="img/VingadoresUltimato.jpg"
+            alt="Vingadores Ultimato"
+            class="img img-fluid"
+            data-id="1"
+          />
+          <div class="content">
+            <h3>VINGADORES ULTIMATO</h3>
+            <p>
+              Após o estalo devastador de Thanos, os Vingadores sobreviventes
+              enfrentam perdas profundas. Em busca de uma solução, eles unem
+              forças para reverter a destruição e restaurar o equilíbrio do
+              universo. Com sacrifícios e desafios intensos, a equipe embarca em
+              uma missão arriscada que testa sua coragem e determinação.
+            </p>
+          </div>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="cell">
+            <img
+              src="img/HomemAranha.jpg"
+              alt="Homem Aranha"
+              class="img img-fluid"
+              data-id="2"
+            />
+
+            <h3>HOMEM ARANHA : LONGE DE CASA</h3>
+            <p>
+              Peter Parker vai em uma viagem escolar pela Europa, onde ele é
+              recrutado por Nick Fury para enfrentar ameaças elementais. O filme
+              explora o luto de Peter após os eventos de "Vingadores: Ultimato"
+              e seu desejo de equilibrar a vida de super-herói com a de um
+              adolescente comum.
+            </p>
+          </div>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/JohnWick.webp"
+              alt="John Wick 3"
+              class="img img-fluid"
+              data-id="3"
+            />
+
+            <h3>JONH WICK 3 : PARABELLUM</h3>
+            <p>
+              Após matar um membro da Alta Cúpula, John Wick se torna alvo de
+              todos os assassinos do mundo. Fugindo pela cidade, ele busca ajuda
+              de aliados para escapar da caçada implacável, enquanto tenta
+              encontrar uma forma de se salvar e lidar com as consequências de
+              suas ações.
+            </p>
+          </div>
+        </div>
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/VelozesFuriosos.jpg"
+              alt="Annabelle"
+              class="img img-fluid"
+              data-id="4"
+            />
+
+            <h3>VELOZES E FURIOSOS 10</h3>
+            <p>
+              A família de Dominic Toretto está levando uma vida tranquila,
+              quando descobrem uma nova ameaça surgindo das profundezas de seu
+              passado. Agora eles precisarão defender de dois grandes inimigos,
+              a Cipher e o Dante. Dominic vai lutar contra o medo de perder
+              aqueles que ama, pois Dante está prestes a destruir tudo que ele
+              conquistou ao longo da vida.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Categoria: Comédia -->
+
+      <h2 class="subtitulo">COMÉDIA</h2>
+      <article class="genero row">
+        <div class="filme col-md-3 movie-card">
+          <img
+            src="img/MinhaMãeUmaPeça.jpg"
+            alt="Minha Mãe é uma Peça 1"
+            class="img"
+            data-id="5"
+          />
+
+          <h3>MINHA MÃE É UMA PEÇA</h3>
+          <p>
+            ODona Hermínia, uma mãe superprotetora e cheia de manias, que lida
+            com os desafios da vida após o divórcio. A trama explora de forma
+            leve e divertida as relações familiares, com destaque para o humor
+            ácido e as situações caricatas vividas pela personagem.
+          </p>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="cell">
+            <img
+              src="img/LindaMulher.jpg"
+              alt="Uma Linda Mulher"
+              class="img"
+              data-id="6"
+            />
+
+            <h3>UMA LINDA MULHER</h3>
+            <p>
+              É uma comédia romântica que narra a improvável história de amor
+              entre Edward Lewis, um rico empresário, e Vivian Ward, uma
+              prostituta de Hollywood. O filme explora a transformação de Vivian
+              ao ser inserida no mundo da alta sociedade, enquanto Edward
+              questiona seus próprios valores e prioridades.
+            </p>
+          </div>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/GenteGrande.jpg"
+              alt="Gente Grande"
+              class="img"
+              data-id="7"
+            />
+
+            <h3>GENTE GRANDE</h3>
+            <p>
+              É uma comédia leve e nostálgica que acompanha cinco amigos de
+              infância que se reencontram após a morte de seu técnico de
+              basquete. Reunidos com suas famílias em um lago, eles revivem
+              memórias e redescobrem a importância da amizade e dos laços
+              familiares.
+            </p>
+          </div>
+        </div>
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/ingressoparaiso.jpg"
+              alt="Annabelle"
+              class="img img-fluid"
+              data-id="8"
+            />
+
+            <h3>INGRESSO PARA PARAÍSO</h3>
+            <p>
+              Georgia e David são um ex-casal que não se suporta, mas precisa
+              deixar as diferenças de lado quando descobrem que sua filha Lily
+              está prestes a se casar impulsivamente em Bali com um rapaz local.
+              Determinados a impedir que ela cometa o mesmo erro que eles
+              acreditam ter cometido no passado, os dois embarcam em uma missão
+              para sabotar o casamento.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Categoria: Drama -->
+
+      <h2 class="subtitulo">DRAMA</h2>
+      <article class="genero row">
+        <div class="filme col-md-3 movie-card">
+          <img
+            src="img/UmaProvaAmor.jpg"
+            alt="Uma Prova de Amor"
+            class="img"
+            data-id="9"
+          />
+
+          <h3>UMA PROVA DE AMOR</h3>
+          <p>
+            Anna Fitzgerald, uma jovem concebida por fertilização in vitro para
+            ser doadora de órgãos para sua irmã mais velha, Kate, que luta
+            contra a leucemia. Quando Anna decide buscar emancipação médica, um
+            turbilhão de emoções e segredos familiares vem à tona.
+          </p>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="cell">
+            <img
+              src="img/SempreAoSeuLado.jpg"
+              alt="Sempre Ao Seu Lado"
+              class="img"
+              data-id="10"
+            />
+
+            <h3>SEMPRE AO SEU LADO</h3>
+            <p>
+              Baseado em uma história real, Sempre ao Seu Lado narra a lealdade
+              de um cão Akita, Hachiko, que espera por seu dono todos os dias na
+              estação de trem, mesmo após a morte deste. A história retrata a
+              profunda amizade e fidelidade entre o animal e seu companheiro
+              humano.
+            </p>
+          </div>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/ACabana.jpg"
+              alt="A Cabana"
+              class="img"
+              data-id="11"
+            />
+
+            <h3>A CABANA</h3>
+            <p>
+              Mack, um homem que perde sua filha em um trágico assassinato. Em
+              meio ao luto, Mack recebe um convite misterioso para visitar a
+              cabana onde o crime ocorreu, e lá encontra uma experiência
+              transformadora com a Santíssima Trindade.
+            </p>
+          </div>
+        </div>
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/aindaestouaqui.jpg"
+              alt="Ainda estou aqui"
+              class="img img-fluid"
+              data-id="12"
+            />
+
+            <h3>AINDA ESTOU AQUI</h3>
+            <p>
+              Conta a história de Eunice Paiva, mãe do autor, que enfrentou a
+              perda do marido, Rubens Paiva, desaparecido político durante a
+              ditadura militar. Marcelo Rubens Paiva entrelaça memórias pessoais
+              com a trajetória de sua mãe, revelando a força dela diante da
+              repressão e da dor, enquanto reflete também sobre sua própria vida
+              e superações.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Categoria: Ficção Científica -->
+
+      <h2 class="subtitulo">FICÇÃO CIENTÍFICA</h2>
+      <article class="genero row">
+        <div class="filme col-md-3 movie-card">
+          <img
+            src="img/thewildrobot.jpg"
+            alt="Robo Selvagem"
+            class="img"
+            data-id="13"
+          />
+
+          <h3>ROBÔ SELVAGEM</h3>
+          <p>
+            Robo Selvagem conta a história de Miles, um jovem que encontra
+            A.X.L., um cão robô militar criado para missões perigosas. Ao se
+            tornarem amigos, eles devem fugir dos criadores do robô, que querem
+            recuperá-lo. Juntos, enfrentam desafios, formando um laço de amizade
+            e proteção em meio ao perigo.
+          </p>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="cell">
+            <img
+              src="img/Transformers.jpg"
+              alt="Transformers"
+              class="img"
+              data-id="14"
+            />
+
+            <h3>TRANSFORMERS: O DESPERTAR DAS FERAS</h3>
+            <p>
+              Transformers: O Despertar das Feras (2023) segue Noah e Elena, que
+              se envolvem em uma luta entre Autobots e Maximals contra os
+              Terrorcons, liderados por Scourge. Juntos, tentam impedir o vilão
+              Unicron, uma entidade que ameaça destruir o universo, ao descobrir
+              um artefato com poderes intergalácticos.
+            </p>
+          </div>
+        </div>
+
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/AvatarPoster.jpg"
+              alt="Avatar 1"
+              class="img"
+              data-id="15"
+            />
+
+            <h3>AVATAR</h3>
+            <p>
+              Jake Sully, um ex-fuzileiro paraplégico, é enviado a Pandora, onde
+              controla um avatar para se infiltrar nos Na'vi. Ao aprender sobre
+              sua cultura, ele se apaixona por Neytiri e se vê dividido entre os
+              humanos, que querem explorar Pandora, e os Na'vi, que lutam pela
+              preservação de sua terra.
+            </p>
+          </div>
+        </div>
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/sonic3.jpg"
+              alt="sonic3"
+              class="img img-fluid"
+              data-id="16"
+            />
+
+            <h3>SONIC 3</h3>
+            <p>
+              A história acompanha Samira, uma mulher que se vê presa em Nova
+              York no exato momento em que os alienígenas sensíveis ao som
+              invadem a Terra. Em meio ao caos absoluto de uma cidade que nunca
+              dorme, Samira precisa encontrar maneiras de sobreviver enquanto
+              tudo ao seu redor desmorona. A cada barulho, a ameaça se
+              intensifica, e o silêncio se torna a única esperança.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Categoria: Terror -->
+
+      <h2 class="subtitulo">TERROR</h2>
+      <article class="genero row">
+        <div class="filme col-md-3 movie-card d-flex flex-column">
+          <img src="img/M3gan.jpg" alt="M3gan" class="img" data-id="17" />
+
+          <h3>M3GAN</h3>
+          <p>
+            M3GAN é um thriller de terror sobre Gemma, uma engenheira que cria
+            uma boneca robótica para ajudar sua sobrinha Cady a superar o luto.
+            Programada para proteger a criança, M3GAN começa a agir de forma
+            violenta e descontrolada, colocando todos ao redor em perigo,
+            explorando os riscos da inteligência artificial.
+          </p>
+        </div>
+
+        <div class="filme col-md-3 movie-card d-flex flex-column">
+          <div class="cell">
+            <img src="img/It.jpg" alt="It - A Coisa" class="img" data-id="18" />
+            <h3>IT - A COISA</h3>
+            <p>
+              É um filme de terror baseado no romance homônimo de Stephen King.
+              Ambientado em Derry, Maine, o filme acompanha um grupo de
+              crianças, o "Clube dos Perdedores", que enfrenta um palhaço
+              maligno chamado Pennywise, que se alimenta dos medos das crianças.
+            </p>
+          </div>
+        </div>
+
+        <div class="filme col-md-3 movie-card d-flex flex-column">
+          <div class="tab">
+            <img
+              src="img/Annabelle.jpg"
+              alt="Annabelle"
+              class="img"
+              data-id="19"
+            />
+
+            <h3>ANNABELLE</h3>
+            <p>
+              Um filme que explora a crescente angústia de um jovem casal, Mia e
+              John Form, após a chegada de uma boneca antiga. Presenteada por
+              John, Annabelle rapidamente se torna um foco de eventos
+              perturbadores. A trama se intensifica quando a casa do casal é
+              invadida por membros de um culto satânico.
+            </p>
+          </div>
+        </div>
+        <div class="filme col-md-3 movie-card">
+          <div class="tab">
+            <img
+              src="img/lugarsilencioso.jpg"
+              alt="Um Lugar Silencioso: Dia Um"
+              class="img img-fluid"
+              data-id="20"
+            />
+
+            <h3>UM LUGAR SILENCIOSO: DIA UM</h3>
+            <p>
+              Em Nova York, Samira luta pela sobrevivência enquanto criaturas
+              sensíveis ao som dizimam a população. No caos, ela enfrenta
+              desafios para se proteger, aprender a silenciar seus movimentos e
+              lidar com os medos do passado e do presente, em um mundo onde o
+              menor barulho pode significar a morte.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <h2 class="titulo-info">INFORMAÇÕES DA ALUNA</h2>
+    <aside class="container">
+
+      <div class="sobre">
+        <p>
+          Este site é um catálogo de filmes completo, ideal para cinéfilos.
+          Explore títulos de diversos gêneros, veja sinopses, elencos e
+          trailers. Descubra novas produções ou relembre clássicos do cinema.
+          Atualizado frequentemente, é o lugar perfeito para encontrar seu
+          próximo filme favorito. Simples, rápido e cheio de boas histórias!
+        </p>
+      </div>
+
+      <div class="autoria">
+        <h3>Autoria</h3>
+        <div class="perfil">
+          <img src="img/Ana.jpg" alt="autora">
+          <div class="autoria-info">
+            <p><b>Aluno:</b> Ana Luiza Damasceno Miranda</p>
+            <p><b>Curso:</b> Sistema de Informação</p>
+            <p><b>Turma:</b> Noite</p>
+          </div>
+        </div>
+    </aside>
+
+    <script src="app.js"></script>
+
+    <!--Rodapé-->
+    <footer>
+      <p>
+        &copy; Explore, descubra e mergulhe no universo do cinema – o catálogo
+        definitivo para os amantes da sétima arte!
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
