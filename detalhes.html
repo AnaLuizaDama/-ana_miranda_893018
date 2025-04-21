@@ -90,13 +90,19 @@
       const img = document.createElement("img");
       img.src = ator.imagem;
       img.alt = ator.nome;
+      
 
       const nome = document.createElement("div");
       nome.className = "carrossel-nome";
       nome.textContent = ator.nome;
 
+      const personagem = document.createElement("div");
+      personagem.className = "carrossel-personagem";
+      personagem.textContent = ator.personagem;
+
       div.appendChild(img);
       div.appendChild(nome);
+      div.appendChild(personagem);
       carrossel.appendChild(div);
     });
   }

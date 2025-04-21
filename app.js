@@ -10,27 +10,33 @@ const filme = [
         elenco: [
             {
               nome: "Robert Downey Jr.",
-              imagem: "atorVingadores/robert.jpg"
+              imagem: "atorVingadores/robert.jpg",
+              personagem: "Tony Stark / Homem de Ferro"
             },
             {
               nome: "Chris Evans",
-              imagem: "atorVingadores/chrisevans.jpg"
+              imagem: "atorVingadores/chrisevans.jpg",
+              personagem: "Steve Rogers / Capitão América"
             },
             {
               nome: "Scarlett Johansson",
-              imagem: "atorVingadores/scarletjohansson.jpg"
+              imagem: "atorVingadores/scarletjohansson.jpg",
+              personagem: "Natasha Romanoff / Viúva Negra"
             },
             {
               nome: "Mark Ruffalo",
-              imagem: "atorVingadores/markruffalo.jpg"
+              imagem: "atorVingadores/markruffalo.jpg",
+              personagem: "Bruce Banner / Hulk"
             },
             {
               nome: "Chris Hemsworth",
-              imagem: "atorVingadores/chrishemsworth.jpg"
+              imagem: "atorVingadores/chrishemsworth.jpg",
+              personagem: "Thor"
             },
             {
               nome: "Jeremy Renner",
-              imagem: "atorVingadores/jeremyrenner.jpg"
+              imagem: "atorVingadores/jeremyrenner.jpg",
+              personagem: "Clint Barton / Gavião Arqueiro"
             }
           ]
     },
@@ -44,27 +50,33 @@ const filme = [
         elenco: [
             {
               nome: "Tom Holland",
-              imagem: "atorHomemAranha/tomholland.jpg"
+              imagem: "atorHomemAranha/tomholland.jpg",
+              personagem: "Peter Parker / Homem Aranha"
             },
             {
               nome: "Zandaya",
-              imagem: "atorHomemAranha/zendaya.jpg"
+              imagem: "atorHomemAranha/zendaya.jpg",
+              personagem: "Michelle Jones"
             },
             {
               nome: "Jacob Batalon",
-              imagem: "atorHomemAranha/jacob.jpg"
+              imagem: "atorHomemAranha/jacob.jpg",
+              personagem: "Ned Leeds"
             },
             {
               nome: "Samuel L. Jackson",
-              imagem: "atorHomemAranha/samuel.jpg"
+              imagem: "atorHomemAranha/samuel.jpg",
+              personagem: "Nick Fury"
             },
             {
               nome: "Jake Gyllenhaal",
-              imagem: "atorHomemAranha/jake.jpg"
+              imagem: "atorHomemAranha/jake.jpg",
+              personagem: "Mystério"
             },
             {
               nome: "Jon Favreau",
-              imagem: "atorHomemAranha/jon.jpg"
+              imagem: "atorHomemAranha/jon.jpg",
+              personagem: "Happy Hogan"
             }
           ]
     },
@@ -78,27 +90,33 @@ const filme = [
         elenco: [
             {
               nome: "Keanu Reeves",
-              imagem: "atorJohn/keanu.jpg"
+              imagem: "atorJohn/keanu.jpg",
+              personagem: "John Wick"
             },
             {
               nome: "Halle Berry",
-              imagem: "atorJohn/halle.jpg"
+              imagem: "atorJohn/halle.jpg",
+              personagem: "Sofia Al-Azwar"
             },
             {
               nome: "Laurence Fishburne",
-              imagem: "atorJohn/laurence.jpg"
+              imagem: "atorJohn/laurence.jpg",
+              personagem: "Bowery King"
             },
             {
               nome: "Asia Kate Dillon",
-              imagem: "atorJohn/asia.jpg"
+              imagem: "atorJohn/asia.jpg",
+              personagem: "The Adjudicator"
             },
             {
               nome: "Mark Dacascos",
-              imagem: "atorJohn/mark.jpg"
+              imagem: "atorJohn/mark.jpg",
+              personagem: "Zero"
             },
             {
               nome: "Ian McShane",
-              imagem: "atorJohn/ian.jpg"
+              imagem: "atorJohn/ian.jpg",
+              personagem: "Winston"
             }
           ]
     },
@@ -112,27 +130,33 @@ const filme = [
         elenco: [
           {
             nome: "Vin Diesel",
-            imagem: "atorVelozes/vin.jpg"
+            imagem: "atorVelozes/vin.jpg",
+            personagem: "Dominic Toretto"
           },
           {
             nome: "Jason Momoa",
-            imagem: "atorVelozes/jason.jpg"
+            imagem: "atorVelozes/jason.jpg",
+            personagem: "Dante Reyes"
           },
           {
             nome: "Alan Ritchson",
-            imagem: "atorVelozes/alan.jpg"
+            imagem: "atorVelozes/alan.jpg",
+            personagem: "Aimes"
           },
           {
             nome: "Michelle Rodriguez",
-            imagem: "atorVelozes/michelle.jpg"
+            imagem: "atorVelozes/michelle.jpg",
+            personagem: "Letty Ortiz"
           },
           {
             nome: "Rita Moreno",
-            imagem: "atorVelozes/rita.jpg"
+            imagem: "atorVelozes/rita.jpg",
+            personagem: "Abuelita Toretto"
           },
           {
             nome: "Brie Larson",
-            imagem: "atorVelozes/brie.jpg"
+            imagem: "atorVelozes/brie.jpg",
+            personagem: "Tess"
           }
         ]
     },
@@ -280,7 +304,7 @@ document.querySelectorAll('.img').forEach(img => {
     img.addEventListener('click', () => {
         const id = img.getAttribute('data-id');
         console.log(`Redirecionando para detalhes.html?id=${id}`);
-        window.location.href = "detalhes.html?id=" + id;
+        window.location.href = `detalhes.html?id=${id}`;
     });
 });
   

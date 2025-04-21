@@ -432,7 +432,7 @@ h3 {
 /* Detalhes do Filme Escolhido */
 .titulo {
   margin-top: 5%;
-  margin-right: 20%;
+  margin-right: 15%;
   color:white;
 }
 
@@ -440,7 +440,6 @@ h3 {
   color: white;
   margin-top: 50px;
   margin-right: 20%;
-  margin-left: auto;
 }
 
 .imagem{
@@ -474,8 +473,6 @@ h3 {
 /* Elenco */
 
 .carrossel-container {
-  margin: 30px 0;
-  padding: 0 20px;
   color: white;
 }
 
@@ -483,8 +480,8 @@ h3 {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 16px;
-  padding: 10px 0;
+  gap: 30px;
+  padding: 40px;
 }
 
 .carrossel::-webkit-scrollbar {
@@ -509,8 +506,15 @@ h3 {
 }
 
 .carrossel-nome {
-  text-align: center;
-  font-size: 90%;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.carrossel-personagem {
+  font-size: 14px;
+  color: #ccc;
   margin-top: 4px;
-  max-width: 100px;
+  line-height: 1.2;
 }
