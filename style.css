@@ -131,6 +131,7 @@ h3 {
   margin: 0 auto;
   display: block;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .movie-card h3{
@@ -259,7 +260,19 @@ h3 {
   display: inline-block;
   width: 55px;
 }
-
+.redes{
+  margin-left: 35%
+}
+.redes span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.redes i {
+  font-size: 20px;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
 /* Dispositivos até 600px */
 
 @media screen and (max-width: 600px) {
@@ -310,8 +323,38 @@ h3 {
   .cell{
     display: none;
   }
+  .container{
+    display: block;
+  }
+  .sobre{
+    width: 100%;
+  }
+  .autoria{
+    width: 100%;
+  }
 
+  /*JavaScript*/
+
+  .detalhes-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .detalhes-container img {
+    width: 60%;
+  }
+
+  .detalhes-container .descricao,
+  .detalhes-container .titulo,
+  .detalhes-container .link {
+    width: 90%;
+    margin-left: 5%;
+   
+  }
+  
 }
+
+
 
 
 /* Dispositivos de 601px até 1024px*/
@@ -349,6 +392,37 @@ h3 {
   }
   .filme{
     width: 45%;
+}
+.container{
+  display: block;
+}
+.sobre{
+  width: 100%;
+}
+.autoria{
+  width: 100%;
+}
+.redes{
+  margin-left: 21%;
+}
+
+ /*JavaScript*/
+
+ .detalhes-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.detalhes-container img {
+  width: 60%;
+}
+
+.detalhes-container .descricao,
+.detalhes-container .titulo,
+.detalhes-container .link {
+  width: 90%;
+  margin-left: 5%;
+ 
 }
 }
 

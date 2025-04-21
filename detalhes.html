@@ -50,15 +50,20 @@
       const container = document.getElementById("tela");
     
       if (filmeSelecionado) {
-        container.innerHTML = `            
+        container.innerHTML = ` 
             <video class = "video" src="${filmeSelecionado.video}" controls></video><br>
+          
+      <div class="detalhes-container"  
+
             <p><img class = "imagem" src="${filmeSelecionado.imagem}" alt="${filmeSelecionado.nome}"></p>
             <h1 class = "titulo">${filmeSelecionado.nome}</h1>
             <p class = "descricao"><b>Sinopse:</b> ${filmeSelecionado.descrição}</p>
             <a class="link" href="${filmeSelecionado.link}" target="_blank">ASSISTIR AO FILME COMPLETO</a>
             <div class="carrossel-container">
                 <h2>Elenco</h2>
-            <div class="carrossel" id="carrossel-elenco">
+            <div class="carrossel" id="carrossel-elenco"></div>
+            
+        </div>
             `;                   
             
       } else {
